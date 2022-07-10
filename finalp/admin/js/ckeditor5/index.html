@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>CKEditor</title>
+</head>
+<body>
+<script src="ckeditor5-build-classic/ckeditor.js"></script>
+
+<div style="width:600px; margin:0 auto">
+<textarea name="content" id="editor">
+   İşte editörün ilk içeriği
+</textarea>
+</div>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            console.log( editor );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+
+</body>
+</html>
